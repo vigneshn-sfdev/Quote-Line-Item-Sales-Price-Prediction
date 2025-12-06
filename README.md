@@ -1,18 +1,20 @@
-# Salesforce DX Project: Next Steps
+# Salesforce Data Cloud Predition Model Project
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Using Quote Line Item data from CRM , a prediction model is trained to predict the sales price.
 
-## How Do You Plan to Deploy Your Changes?
+# Implementation Steps
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+1 - Ingesting CRM data - Quote Line Items
+2 - Creating a custom Data Model Object for Quote Line Item (no default DMO)
+3 - Mapping the required fields and fields used in the prediction model
+4 - Creating a prediction model and training it on the Quote Line Item DMO (Model Algorithm : Extreme Gradient Boosing)
+5 - Using the prediction model to predict sales price of new Quote Line Items.
 
-## Configure Your Salesforce DX Project
+# Next Steps
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
-
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+1 - Clone this repository locally.
+2 - Deploy the metadata to your Org from VS Code or CLI
+3 - Navigate to 'data kits' in setup and deploy the data kit.
+4 - Ingest your CRM data  ( Quote Line Items ) -  Refresh the stream
+5 - Retrain the model if needed
+6 - From a flow, call the action associated with the model to pass the input parameters and generate prediction and display the prediction.

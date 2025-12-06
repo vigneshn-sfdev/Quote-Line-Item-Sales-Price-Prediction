@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataKitObjectDependency xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataPackageKitDef>Sales_Price_Prediction</dataPackageKitDef>
+    <developerName>QuoteLineItem_Home</developerName>
+    <masterLabel>QuoteLineItem_Home__dll</masterLabel>
+    <sourceObject>QuoteLineItem_Home1</sourceObject>
+    <sourceObjectType>DataSourceObject</sourceObjectType>
+    <targetObject>QuoteLineItem_Home</targetObject>
+</DataKitObjectDependency>

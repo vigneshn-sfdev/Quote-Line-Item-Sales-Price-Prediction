@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataKitObjectDependency xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataPackageKitDef>Sales_Price_Prediction</dataPackageKitDef>
+    <developerName>SalesforceDotCom_Home</developerName>
+    <masterLabel>Salesforce Connector Salesforce Trial Org Request &amp; Manage Home</masterLabel>
+    <sourceObject>QuoteLineItem_Home_1764646106757</sourceObject>
+    <sourceObjectType>DataStreamTemplate</sourceObjectType>
+    <targetObject>SalesforceDotCom_Home</targetObject>
+</DataKitObjectDependency>
